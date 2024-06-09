@@ -1,0 +1,28 @@
+nelmio_api_doc:
+    documentation:
+        info:
+            title: "API de meetwashing"
+            description: "API pour la gestion des véhicules."
+            version: "1.0.0"
+        components:
+            schemas:
+                Vehicule:
+                    type: object
+                    properties:
+                        id:
+                            type: integer
+                            description: "L'ID du véhicule"
+                        plaqueImmatriculation:
+                            type: string
+                            description: "La plaque d'immatriculation du véhicule"
+                        typeVehicule:
+                            type: string
+                            description: "Le type du véhicule"
+                        photos:
+                            type: string
+                            description: "Les photos du véhicule"
+                        dateMiseEnCirculation:
+                            type: string
+                            format: date-time
+                            description: "La date de mise en circulation du véhicule"
+   
